@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employees",
+  "info": {
+    "name": "employee",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "group": {
+      "model": "group"
+    },
+    "position": {
+      "model": "position"
+    },
+    "isDel": {
+      "type": "boolean",
+      "default": false
+    },
+    "id_staff": {
+      "type": "string"
+    },
+    "overtimes": {
+      "via": "employees",
+      "collection": "overtime"
+    }
+  }
+}
