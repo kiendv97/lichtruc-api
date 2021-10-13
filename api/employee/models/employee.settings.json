@@ -28,9 +28,8 @@
     "id_staff": {
       "type": "string"
     },
-    "overtimes": {
-      "via": "employees",
-      "collection": "overtime"
+    "ot_data": {
+      "type": "json"
     }
   }
 }

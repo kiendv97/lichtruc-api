@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "groups",
+  "collectionName": "managers",
   "info": {
-    "name": "group",
+    "name": "manager",
     "description": ""
   },
   "options": {
@@ -15,12 +15,15 @@
     "name": {
       "type": "string"
     },
-    "isDel": {
-      "type": "boolean"
+    "groups": {
+      "collection": "group",
+      "via": "manager"
     },
-    "manager": {
-      "via": "groups",
-      "model": "manager"
+    "username": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
     }
   }
 }

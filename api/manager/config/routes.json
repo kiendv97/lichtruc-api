@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/overtimes",
-      "handler": "overtime.find",
+      "path": "/managers",
+      "handler": "manager.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/overtimes/count",
-      "handler": "overtime.count",
+      "path": "/managers/count",
+      "handler": "manager.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/overtimes/:id",
-      "handler": "overtime.findOne",
+      "path": "/managers/:id",
+      "handler": "manager.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/overtimes",
-      "handler": "overtime.create",
+      "path": "/managers",
+      "handler": "manager.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/overtimes/:id",
-      "handler": "overtime.update",
+      "path": "/managers/:id",
+      "handler": "manager.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/overtimes/:id",
-      "handler": "overtime.delete",
+      "path": "/managers/:id",
+      "handler": "manager.delete",
       "config": {
         "policies": []
       }
